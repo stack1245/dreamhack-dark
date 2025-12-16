@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Dreamhack Dark Mode",
+  "version": "1.0.0",
+  "description": "dreamhack.io를 위한 다크모드 확장 프로그램",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.dreamhack.io/*"],
+      "css": ["dark-mode.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": []
+}
