@@ -1,43 +1,35 @@
-/* Dreamhack Dark Mode - 전체적인 다크모드 스타일 */
-
-/* 기본 배경과 텍스트 색상 */
+/* base colors */
 body {
   background-color: #1e1e1e !important;
   color: #e0e0e0 !important;
 }
 
-/* 모든 배경색을 다크 색상으로 변경 */
 * {
   background-color: inherit !important;
   border-color: #404040 !important;
 }
 
-/* 헤더 영역 */
 header, nav, .navbar {
   background-color: #2d2d2d !important;
   color: #e0e0e0 !important;
 }
 
-/* 메인 컨텐츠 영역 */
 main, .main-content, .content, article {
   background-color: #1e1e1e !important;
   color: #e0e0e0 !important;
 }
 
-/* 카드 및 패널 */
 .card, .panel, .box, .container {
   background-color: #252525 !important;
   color: #e0e0e0 !important;
   border-color: #404040 !important;
 }
 
-/* 사이드바 */
 .sidebar, aside {
   background-color: #2d2d2d !important;
   color: #e0e0e0 !important;
 }
 
-/* 입력 필드 */
 input, textarea, select {
   background-color: #2d2d2d !important;
   color: #e0e0e0 !important;
@@ -48,31 +40,18 @@ input::placeholder, textarea::placeholder {
   color: #808080 !important;
 }
 
-/* 버튼 */
 button, .btn {
   background-color: #3d3d3d !important;
   color: #e0e0e0 !important;
   border-color: #505050 !important;
 }
 
-button:hover, .btn:hover {
-  background-color: #4d4d4d !important;
-}
+button:hover, .btn:hover { background-color: #4d4d4d !important; }
 
-/* 링크 */
-a {
-  color: #6eb5ff !important;
-}
+a { color: #6eb5ff !important; }
+a:hover { color: #8fc7ff !important; }
+a:visited { color: #b392f0 !important; }
 
-a:hover {
-  color: #8fc7ff !important;
-}
-
-a:visited {
-  color: #b392f0 !important;
-}
-
-/* 테이블 */
 table {
   background-color: #252525 !important;
   color: #e0e0e0 !important;
@@ -89,29 +68,20 @@ td {
   border-color: #404040 !important;
 }
 
-tr:hover {
-  background-color: #2a2a2a !important;
-}
+tr:hover { background-color: #2a2a2a !important; }
 
-/* 코드 블록 */
 pre, code {
   background-color: #1a1a1a !important;
   color: #d4d4d4 !important;
   border-color: #404040 !important;
 }
 
-/* 모달 및 팝업 */
-.modal, .popup, .dialog {
-  background-color: #252525 !important;
-  color: #e0e0e0 !important;
-}
-
+.modal, .popup, .dialog,
 .modal-content, .popup-content {
   background-color: #252525 !important;
   color: #e0e0e0 !important;
 }
 
-/* 드롭다운 메뉴 */
 .dropdown-menu, .menu {
   background-color: #2d2d2d !important;
   color: #e0e0e0 !important;
@@ -121,47 +91,27 @@ pre, code {
   background-color: #3d3d3d !important;
 }
 
-/* 알림 및 배지 */
 .alert, .notification, .badge {
   background-color: #2d2d2d !important;
   color: #e0e0e0 !important;
   border-color: #404040 !important;
 }
 
-/* 진행 바 */
-.progress {
-  background-color: #2d2d2d !important;
-}
+.progress { background-color: #2d2d2d !important; }
+.progress-bar { background-color: #4d8cc6 !important; }
 
-.progress-bar {
-  background-color: #4d8cc6 !important;
-}
-
-/* 푸터 */
 footer {
   background-color: #2d2d2d !important;
   color: #e0e0e0 !important;
 }
 
-/* 스크롤바 */
-::-webkit-scrollbar {
-  background-color: #1e1e1e !important;
-}
+::-webkit-scrollbar { background-color: #1e1e1e !important; }
+::-webkit-scrollbar-thumb { background-color: #4d4d4d !important; }
+::-webkit-scrollbar-thumb:hover { background-color: #5d5d5d !important; }
 
-::-webkit-scrollbar-thumb {
-  background-color: #4d4d4d !important;
-}
+img { filter: brightness(0.9); }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #5d5d5d !important;
-}
-
-/* 이미지는 밝기를 약간 줄여서 눈의 피로 감소 */
-img {
-  filter: brightness(0.9);
-}
-
-/* 흰색 배경을 강제하는 요소들 */
+/* force styles */
 div[style*="background-color: white"],
 div[style*="background-color: #fff"],
 div[style*="background-color: #ffffff"],
@@ -171,25 +121,12 @@ div[style*="background: #ffffff"] {
   background-color: #252525 !important;
 }
 
-/* 검은색 텍스트를 강제하는 요소들 */
 *[style*="color: black"],
 *[style*="color: #000"],
 *[style*="color: #000000"] {
   color: #e0e0e0 !important;
 }
 
-/* 반전 효과가 필요한 요소들 (로고 등) */
-svg, .icon {
-  filter: invert(0.9) hue-rotate(180deg);
-}
-
-/* 그림자 효과 조정 */
-.shadow, .card-shadow {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
-}
-
-/* 선택된 텍스트 */
-::selection {
-  background-color: #264f78 !important;
-  color: #ffffff !important;
-}
+svg, .icon { filter: invert(0.9) hue-rotate(180deg); }
+.shadow, .card-shadow { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important; }
+::selection { background-color: #264f78 !important; color: #fff !important; }

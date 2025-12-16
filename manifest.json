@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Dreamhack Dark Mode",
-  "version": "1.0.0",
-  "description": "dreamhack.io를 위한 다크모드 확장 프로그램",
+  "name": "Dreamhack Dark",
+  "version": "1.0",
+  "description": "dreamhack dark mode",
   "content_scripts": [
     {
       "matches": ["*://*.dreamhack.io/*"],
@@ -10,6 +10,5 @@
       "js": ["content.js"],
       "run_at": "document_start"
     }
-  ],
-  "permissions": []
+  ]
 }
